@@ -1,0 +1,10 @@
+Building the latest experimental FairCoin release:
+
+git clone https://github.com/FairCoinTeam/fair-coin.git
+cd fair-coin
+./autogen.sh  
+./configure --prefix=/usr --disable-maintainer-mode --with-incompatible-bdb --disable-tests  
+make
+
+strip src/qt/FairCoin-qt
+strip src/FairCoind
